@@ -1,12 +1,7 @@
 # Redux-models. OOP style. [![npm version](https://img.shields.io/npm/v/redux-model-s.svg?style=flat-square)](https://www.npmjs.com/package/redux-model-s) [![Medium](https://img.shields.io/badge/blog-medium-brightgreen.svg)](https://medium.com/@kobernikyura/redux-models-oop-style-8ffb56d0098a#.fishkkfyg)
 
 ### Background
-This approach can be usefull in big projects with a lot of REST Full API. When your application consists of dozens of screens and dozens or much bigger server endpoints for getting data this is not comfortable for me to has a lot of files for developing one business model (API file for send request, action creator, action type, reducer and mapper). Even more when you see that all cases can be the group in similar behavior logic, some things can be reused you start annoying doing monkey works.
-I decided to invent some way that helps me to improve this process. Now I tell a little bit about my small concept with using model in the react-redux application.
-I have decided to move all data logic in models. All data operations, all manipulations will be in one place its Model! It will be used class inheritance for save most common logic in a base model. And in this way you can you all advantage of OOP. You can create base classes, you can write once and use everywhere in sub classes.
-In this first approach I placed in base model 3 reducers and action creators: start requesting, get a response from the server and clear data when you need this. In such easy way, we covered some base demand for REST API in client-side. Of course, you have in almost every data some custom behavior — this can be handle with a sub model, where can be overridden any method or add new ones (action creators, action types, reducers or mappers).
-All API requests (get, post, put, delete) also live in the model, every model knows from where it can get and how to convert it request params from component to server and request response from the server to the client.
-Redux stay working and you can use it as before for some custom situations. But all that can be placed in model concept you can move to models.
+In this approach you have only model with all the logic (getting data from server, converting it into client view, action creators, reducers etc …) and standard redux reducer for linking your model with reducer:
 
 #### Goals
 - Move all logic (action creator, api call, reducer, data transformations server-client-server, validation) in one file - MODEL
