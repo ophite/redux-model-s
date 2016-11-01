@@ -1,7 +1,9 @@
 export const apiReducer = (state, action) => {
+    
     if (!action.payload) {
         return state;
     }
+    
     const { model } = action.payload;
     if (!model) {
         return state;
