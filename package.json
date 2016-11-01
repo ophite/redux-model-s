@@ -1,6 +1,6 @@
 {
     "name": "redux-model-s",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Working with redux through models. Involve OOP in redux. Do it more power and add DRY.",
     "scripts": {
         "build": "npm run clean && npm run build:lib",
@@ -13,6 +13,7 @@
     },
     "keywords": [
         "Redux-models",
+        "Redux-model-s",
         "Redux",
         "ES2015",
         "Babel"
@@ -21,7 +22,11 @@
         "name": "Iurii Kobernyk",
         "email": "kobernik.yura@gmail.com"
     },
-    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ophite/redux-model-s.git"
+    },
+    "license": "MIT",
     "homepage": "",
     "devDependencies": {
         "babel-cli": "6.3.13",
