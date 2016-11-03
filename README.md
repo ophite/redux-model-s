@@ -13,11 +13,11 @@ In this approach you have only model with all the logic (getting data from serve
 ### Installation
 #### Using npm:
 ```sh
-$ npm install --save react-model-s
+$ npm install --save redux-model-s
 ```
 #### Using yarn:
 ```sh
-$ yarn add react-model-s
+$ yarn add redux-model-s
 ```
 ### Usage
 ```javascript

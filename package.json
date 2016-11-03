@@ -1,6 +1,6 @@
 {
     "name": "redux-model-s",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Working with redux through models. Involve OOP in redux. Do it more power and add DRY.",
     "scripts": {
         "build": "npm run clean && npm run build:lib",
